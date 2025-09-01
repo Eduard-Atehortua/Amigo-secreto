@@ -22,7 +22,8 @@ let yourSecretfriend = document.getElementById("resultado");
 }
 
 function sortearAmigo(){
-   let random = Math.floor(Math.random()* friendList.length)
+   let random = Math.floor(Math.random()* friendList.length);
+   let secreFriend = friendList[random];
+   yourSecretfriend.innerHTML = `El amigo secreto es: ${secreFriend}`;
 
-   
 }
