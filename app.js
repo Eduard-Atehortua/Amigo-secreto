@@ -7,8 +7,10 @@ let friendList = [];
 
 let ulFriendList = document.getElementById("listaAmigos");
 
- 
-function agregarAmigo() {
+let yourSecretfriend = document.getElementById("resultado");
+
+
+ function agregarAmigo() {
     if(imputFriend.value ==""){
         alert('Ingresa un nombre por favor')
 
@@ -16,6 +18,11 @@ function agregarAmigo() {
     ulFriendList.innerHTML += `<li> ${imputFriend.value} </li>`};
     
 
-    console.log(friendList)
+    
 }
 
+function sortearAmigo(){
+   let random = Math.floor(Math.random()* friendList.length)
+
+   
+}
